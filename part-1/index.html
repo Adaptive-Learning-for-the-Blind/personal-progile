@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Profile Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="vh-100 d-flex flex-column" data-bs-theme="light">
+    <header class="container py-4">
+        <div class="row align-items-center">
+            <div class="col">
+                <h1>Alex Johnson</h1>
+                <p>Web Developer</p>
+            </div>
+            <div class="col-auto">
+                <button id="theme-toggle" class="btn btn-outline-primary" aria-label="Toggle dark or light theme">
+                    Dark Mode
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container flex-grow-1 d-flex align-items-center">
+        <div class="row w-100">
+            <div class="col-md-8 mx-auto">
+                <div class="card shadow">
+                    <div class="card-body">
+                        <h2 class="card-title mb-4" tabindex="0">Contact Information</h2>
+                        
+                        <div class="mb-3">
+                            <h3 class="h5" tabindex="0">Email</h3>
+                            <a href="mailto:alex@example.com" class="d-block mb-2" tabindex="0">
+                                alex@example.com
+                            </a>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <h3 class="h5" tabindex="0">Social Media</h3>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <a href="https://twitter.com/alexjohnson" class="text-decoration-none">
+                                        Twitter: @alexjohnson
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="https://github.com/alexjohnson" class="text-decoration-none">
+                                        GitHub: alexjohnson
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://linkedin.com/in/alexjohnson" class="text-decoration-none">
+                                        LinkedIn: alexjohnson
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container py-3">
+        <div class="row">
+            <div class="col text-center">
+                <p tabindex="0">&copy; 2025 Alex Johnson. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    
+</body>
+</html>
